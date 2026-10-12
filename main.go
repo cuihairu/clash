@@ -77,7 +77,7 @@ func main() {
 
 	if testConfig {
 		if _, err := executor.Parse(); err != nil {
-			log.Errorln(err.Error())
+			log.Errorln("%s", err.Error())
 			fmt.Printf("configuration file %s test failed\n", C.Path.Config())
 			os.Exit(1)
 		}
